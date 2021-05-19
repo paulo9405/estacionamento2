@@ -1,0 +1,68 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+
+{% block menu %}
+    <div class="row">
+    <div class="col-12">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'website_servicos' %}">Serviços</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'website_sobre' %}">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'website_planos' %}">Planos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'website_contato' %}">Contatos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'core_home' %}">Sistema</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+    <div class="row row-space">
+        <div class="col-12">
+            Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
+            Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. 
+            Casamentiss faiz malandris se pirulitá. Leite de capivaris, leite de mula manquis sem cabeça.
+            Casamentiss faiz malandris se pirulitá.
+
+            Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
+            Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. 
+            Casamentiss faiz malandris se pirulitá. Leite de capivaris, leite de mula manquis sem cabeça.
+            Casamentiss faiz malandris se pirulitá.
+
+            Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
+            Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. 
+            Casamentiss faiz malandris se pirulitá. Leite de capivaris, leite de mula manquis sem cabeça.
+            Casamentiss faiz malandris se pirulitá.
+        </div>
+    </div>     
+
+    <div class="row row-space">
+        <div class="col-6">
+            <img src="{% static 'img/car.jpeg' %}" alt="Minha imagem">
+
+        </div>
+
+        <div class="col-6">
+            <img src="{% static 'img/car.jpeg' %}" alt="Minha imagem">
+        </div>
+    </div>
+
+{% endblock %}
